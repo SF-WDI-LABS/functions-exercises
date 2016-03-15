@@ -3,7 +3,7 @@ function combineWords(word1, word2) {
     console.log(word1 + word2);
 }
 
-combineWords('dog', 'house')
+combineWords('dog', 'house');
 
 function repeatPhrase(phrase, n) {
     for (i = 0; i < n; i++){
@@ -15,16 +15,13 @@ repeatPhrase ("Hello", 5);
 
 function toTheNthPower(number, power) {
     var product = 1;
+    for(i = 0; i < Math.abs(power); i++){
+        product = product * number;
+    }
     if (power >= 0) {
-        for(i = 0; i < power; i++){
-            product = product * number;
-        }
         return product;
     }
     else {
-        for(i = 0; i > power; i--){
-            product = product * number;
-        }
         return 1 / product;
     }
 }
