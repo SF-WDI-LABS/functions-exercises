@@ -74,18 +74,18 @@ function countVowels(word) {
 countVowels("stealing");
 // displays 3
 
-function countVowels(word) {
-		var vowels = 0;
-		word=word.split(word);
+function countVowels(word1) {
+    	var vowels = 0;
+	    var	word=word1.split("");
 		for (i=0; i<word.length; i++){
 			if(word[i]==="a" || word[i]==="e" || word[i]==="i" || word[i]==="o" || word[i]==="u" || word[i]==="A" || word[i]==="E" || word[i]==="I" || word[i]==="O" || word[i]==="U"){
 			vowels++;
 			}
 		}
-		}
 		console.log(vowels);
 		return vowels;
 }
+
 
 function printTriangle(length) {
     for(i=1;i<=length;i++){
