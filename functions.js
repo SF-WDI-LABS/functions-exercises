@@ -103,4 +103,19 @@ printTriangle(3);
 // *
 // **
 // ***
-```
+
+function printPyramid(length) {
+    for(var i = 1; i <= length; i+=1) {
+		var display = '';
+
+		for(var j = length - i; j > 0; j-=1) {
+			display += ' ';
+		}
+		for(var k = 0; k < i; k+=1) {
+			display += '* ';
+		}
+		console.log(display);
+	}
+}
+
+printPyramid(10)
