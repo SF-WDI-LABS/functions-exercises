@@ -2,7 +2,7 @@
 
 //### 1.  Build your own concatentation
 function combineWords(word1, word2) {
-  return word1+word2;
+  return word1 + word2;
 }
 
 combineWords('dog', 'house');
@@ -44,7 +44,7 @@ areaOfACircle(2);
 
 //#5 Pythagorean Theorem: a2 + b2 = c2
 function pythagoreanTheorem(a, b) {
-    return Math.sqrt(a*a + b*b);
+    return Math.sqrt(a * a + b * b);
 }
 
 pythagoreanTheorem(3, 4);
@@ -104,7 +104,7 @@ function starsThisRow(numberOfRows){
         var row = '';
 
         console.log('starsThisRow', starsThisRow);
-        printStars(i)
+        printStars(i);
         starsThisRow += 1;
         console.log('whiteSpaceEachSide', whiteSpaceEachSide);
         whiteSpaceEachSide -= 1;
@@ -113,19 +113,13 @@ function starsThisRow(numberOfRows){
 }
 var printStars = function printStars(string){
     return string += '*';
-}
+};
 var printWhiteSpace = function printWhiteSpace(numberOfSpaces){
   var space = ' ';
   var aSide = '';
-  debugger;
 
   for (var i = 0; i < numberOfSpaces; i++){
       aSide += space;
-      debugger;
   }
   return aSide;
-}
-['','',''].map(printStars('*'))
-function whiteSpaceThisRow (row) {
-  if (row.length)
-}
+};
