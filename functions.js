@@ -37,9 +37,8 @@ toTheNthPower(4, 5);
 
 // ----------------- 4. Area of a circle -----------------
 function areaOfACircle(radius) {
-    return (3.14 * radius * radius);
+    return (Math.PI * radius * radius);
 }
-
 
 areaOfACircle(2);
 
