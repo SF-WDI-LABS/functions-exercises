@@ -69,8 +69,15 @@ isXEvenlyDivisibleByY(99, 3);
 
 //#7 Vowel Count
 function countVowels(word) {
-    wordCount = word.length;
-    return wordCount;
+    var vowelCount = 0;
+
+    for (i=0; i < word.length; i++) {
+
+      if (word.charAt(i) === "a" || word.charAt(i) === "e" || word.charAt(i) === "i" || word.charAt(i) === "o" || word.charAt(i) === "u" || word.charAt(i) === "y") {
+        vowelCount++;
+      }
+    }
+    return vowelCount;
 }
 
 countVowels("stealing");
@@ -79,14 +86,13 @@ countVowels("stealing");
 
 //#8. Build an ASCII Triangle!
 function printTriangle(length) {
-    for (i = 1; i <= length; i++) {
-      var space = " ";
+    var space = '';
 
-      for (j = 1; j <= i; j++) {
-        space += "*";
-      }
+    for (i = 0; i < length; i++) {
+      space += "*";
       console.log(space);
     }
+
 }
 
 printTriangle(3);
