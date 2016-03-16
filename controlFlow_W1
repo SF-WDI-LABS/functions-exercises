@@ -1,0 +1,106 @@
+Exercises -Control Flow
+// 1)
+true || false // ->true
+false && false // -> false
+true && false // -> false
+(false || true) && true //-> true
+false && ((true || false) && (false || true)) // -> false
+
+// 2)
+
+1 // -> true
+0 // -> false
+3.14159 // -> true
+"abc" // -> true
+"" // -> false
+Array // -> true
+[] // -> true
+Object // -> true
+{} // -> true
+
+// 3)
+true && 6 //-> true returns
+0 || "hi" //-> true -> returns 'hi'
+["a","b","c"] || "123" // -> true returns ["a","b","c"]
+{"key":"value"} || false// -> true {"key":"value"}
+
+// 4)
+""//->
+0 //->
+undefined// ->
+null //->
+NaN// ->
+
+// login -solution)
+
+function stringCheck(username, password){
+if( typeof username == 'string' && typeof password =='string'){
+    console.log('All Good');
+}
+else{
+  console.log("Come on bro'man we need a username and password");
+}
+}
+stringCheck('relative-Rene','word');
+
+// Superman?
+if(isSuperman){
+  alert("It's superman!")
+}
+
+// make it a SloppyBurger - solution
+var input = prompt('What would you like');
+if(input == 'DoubleBurger'){
+  alert('One SloppyDoubleBurger')
+};
+if(input == 'Fries'){
+  alert('One SloppyFries');
+}
+if(input == 'SloppyJoe'){
+  alert('One SloppySloppyJoe');
+}else{
+  alert('One SloppyBurger');
+}
+
+// For Here - solution
+var items = prompt("How many items"), tax = 0.775;scanned = 0, total = 0,itemcost;
+
+while(items > scanned){
+  if(forHere){
+    scanned++;
+    cost += (itemcost*tax);
+  }
+  else if(isHotBeverage || isHotBakedGood || isColdPrepared){
+    scanned++;
+    total += itemcost;
+  }
+}
+
+// Can I ride? - Solution
+var BossNotLooking = true;
+var tokens = 3; // Jimmy's tokens
+var parkpass = true
+var tallness = prompt('How tall are you?');
+var age = prompt('How old are you?')
+// Can he ride?
+if ((( tokens >= 5 && 4 >= tallness && 12 >= age)|| parkpass &&  4 >= tallness && 12 >= age)))||BossNotLooking))) {
+    console.log("Step right up!");
+} else if(){
+    console.log("Sorry, you can't ride")
+}
+// Loopy -Solution
+var arr = [0,1,2,3,4,5];
+var counter = 0;
+var print = arr.length-1;
+while(counter < print){
+  counter++;
+  counsole.log(arr[counter]);
+}
+
+var arr = [0,1,2,3,4,5];
+var counter = 0;
+var print = arr.length-1;
+while(counter < print){
+  print--;
+  counsole.log(arr[print]);
+}
