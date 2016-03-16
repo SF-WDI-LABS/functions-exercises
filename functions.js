@@ -58,7 +58,7 @@ function countVowels(word) {
     var numberOfVowels = 0;
     var i;
     for (i = 0; i < word.length; i++) {
-    if (word[i] === "a" || word[i] === "e" || word[i] === "i" || word[i] === "o" || word[i] === "u") {
+    if (word[i] === "a" || word[i] === "e" || word[i] === "i" || word[i] === "o" || word[i] === "u"|| word[i] === "y") {
       numberOfVowels += 1;
     }
   }
