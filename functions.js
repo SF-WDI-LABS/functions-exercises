@@ -65,7 +65,17 @@ isXEvenlyDivisibleByY(99, 2);
 problem 7
 
 function Vowels(word) {
-  var vowel = word.match(/[aeiou]/gi);
+  var vowel = word.match(/[aeiouon printTriangle(length) {
+	for(var i = 1; i <= length; i++) {
+		var tier = '';
+		for(var j = 0; j < i; j++) {
+			tier += '*';
+		}
+
+		console.log(tier);
+	}
+}
+//printTriangle(3);i);
   return vowel === null ? 0 : vowel.length;
 }
 
@@ -74,3 +84,31 @@ function Vowels(word) {
 problem 8
 
 
+function printTriangle(length) {
+	for(var i = 1; i <= length; i++) {
+        	var tier = '';
+		for(var j = 0; j < i; j++) {
+		tier += '*';
+}
+		console.log(tier);
+	}
+}
+//printTriangle(3);
+
+
+problem 9
+
+function printPyramid(length) {
+	for(var i = 1; i <= length; i++) {
+		var tier = '';
+
+		for(var j = length - i; j > 0; j--) {
+			tier += ' ';
+}
+		for(var k = 0; k < i; k++) {
+			tier += '* ';
+}
+		console.log(tier);
+	}
+}
+//printPyramid(10);
