@@ -54,7 +54,16 @@ function areaOfACircle(radius) {
 
 areaOfACircle(2);
 
-//5. pythagoreanTheorem (NO ANSWER)
+//5. pythagoreanTheorem
+//the square of the hypothenuse (c) is equal to the sum of the sqaures of a and b
+function pythagoreanTheorem(a, b) {
+    var c = (a * a) + (b * b);
+	  c = Math.sqrt(c);
+	  console.log(c);
+	  return c;
+}
+
+pythagoreanTheorem(3, 4);
 
 //6. Is X evenly divisible by y
 
