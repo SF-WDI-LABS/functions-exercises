@@ -64,3 +64,16 @@ function countVowels(word) {
 }
 
 countVowels("stealing");
+
+//8 I'm stuck on this one :(
+function printTriangle(length) {
+	for(var i = 1; i <= length; i++) {
+	    var x = ;
+      for(var j = 1; j <= i; j++) {
+        console.log("*");
+      }
+    }
+    return x;
+}
+
+printTriangle(3);
