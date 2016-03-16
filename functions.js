@@ -1,9 +1,8 @@
-//Notes to self: Use return instead of console.log within the function as necessary
-//Call the function when submitting this
 
-// TODO: add your solutions here!
 
-//1.
+//SOLUTIONS TO FUNCTIONS EXERCISE
+
+//1.Build your own concatenation
 
 function combineWords(word1, word2) {
   return word1 + word2;
@@ -19,7 +18,7 @@ function combineWords(word1, word2) {
 
 combineWords('dog', 'house');
 
-//2.
+//2. Repeat a phrase
 
 function repeatPhrase(phrase, n) {
 	for (i = 0; i < n; i++) {
@@ -30,7 +29,7 @@ function repeatPhrase(phrase, n) {
 repeatPhrase("Hello", 5);
 console.log();
 
-//3.
+//3. Build your own power function
 
 var result = 1;
 
@@ -43,7 +42,7 @@ function toTheNthPower(number, power) {
 
 toTheNthPower(4, 5);
 
-//4.
+//4. Area of a circle
 
 function areaOfACircle(radius) {
   var rsquared = radius * radius;
@@ -54,3 +53,47 @@ function areaOfACircle(radius) {
 }
 
 areaOfACircle(2);
+
+//5. pythagoreanTheorem (NO ANSWER)
+
+//6. Is X evenly divisible by y
+
+function isXEvenlyDivisibleByY(x, y) {
+  if ( x % y === 0) {
+	  return true;
+	} else {
+	  return false;
+	}
+}
+
+isXEvenlyDivisibleByY(99, 3);
+
+//7. Vowel counter
+
+function countVowels(word) {
+  var vowelcount = 0;
+  word = word.toLowerCase();
+  for (var i = 0; i < word.length; i++) {
+    if ( word[i] === 'a' || word[i] === 'e' || word[i] === 'i' || word[i] === 'o'   || word[i] === 'u' || word[i] === 'y') {
+      vowelcount++;
+    }
+  }
+  console.log(vowelcount);
+  return vowelcount;
+}
+
+countVowels("stealing");
+
+//8. Build an ASCII tree
+
+function printTriangle(length) {
+  for (i = 1; i <= length; i++) {
+    var triangle = '';
+    for (j = 0; j < i; j++) {
+	    triangle += '*';
+	  }
+	    console.log(triangle);
+  }
+}
+
+printTriangle(3);
