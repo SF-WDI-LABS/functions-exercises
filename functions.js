@@ -92,5 +92,3 @@ function printTriangle(length) {
 }
 
 printTriangle(3);
-
-//
