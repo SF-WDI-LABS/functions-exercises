@@ -2,8 +2,7 @@
 
 //### 1.  Build your own concatentation
 function combineWords(word1, word2) {
-  var combinedText = word1+word2;
-  return combinedText;
+  return word1+word2;
 }
 
 combineWords('dog', 'house');
@@ -11,7 +10,7 @@ combineWords('dog', 'house');
 //### 2.  Repeat a phrase
 
 function repeatPhrase(phrase, n) {
-    for (i = 0; i < n; i++) {
+    for (var i = 0; i < n; i++) {
       console.log(phrase);
     }
 }
@@ -35,8 +34,8 @@ toTheNthPower(4, 5);
 
 //#4 Area of a circle
 function areaOfACircle(radius) {
-    pi = 3.14159
-    var circleArea = radius*radius*pi;
+    var pi = 3.14159;
+    var circleArea = radius * radius * pi;
     return circleArea;
 }
 
@@ -45,8 +44,7 @@ areaOfACircle(2);
 
 //#5 Pythagorean Theorem: a2 + b2 = c2
 function pythagoreanTheorem(a, b) {
-    var c = Math.sqrt(a*a + b*b)
-    return c;
+    return Math.sqrt(a*a + b*b);
 }
 
 pythagoreanTheorem(3, 4);
@@ -55,12 +53,7 @@ pythagoreanTheorem(3, 4);
 
 //#6 Is X Evenly Divisible by Y ?
 function isXEvenlyDivisibleByY(x, y) {
-    if (x % y === 0) {
-      return true;
-    }
-    else {
-      return false;
-    }
+    return (x % y === 0);
 }
 
 isXEvenlyDivisibleByY(99, 3);
@@ -100,3 +93,39 @@ printTriangle(3);
 // *
 // **
 // ***
+
+
+//#9 Challenge
+function starsThisRow(numberOfRows){
+    var starsThisRow = 1;
+    var whiteSpaceEachSide = numberOfRows - 1;
+
+    for(var i = 1; i < numberOfRows + 1; i++){
+        var row = '';
+
+        console.log('starsThisRow', starsThisRow);
+        printStars(i)
+        starsThisRow += 1;
+        console.log('whiteSpaceEachSide', whiteSpaceEachSide);
+        whiteSpaceEachSide -= 1;
+    }
+
+}
+var printStars = function printStars(string){
+    return string += '*';
+}
+var printWhiteSpace = function printWhiteSpace(numberOfSpaces){
+  var space = ' ';
+  var aSide = '';
+  debugger;
+
+  for (var i = 0; i < numberOfSpaces; i++){
+      aSide += space;
+      debugger;
+  }
+  return aSide;
+}
+['','',''].map(printStars('*'))
+function whiteSpaceThisRow (row) {
+  if (row.length)
+}
