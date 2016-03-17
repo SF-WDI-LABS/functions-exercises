@@ -1,0 +1,45 @@
+//Challenge A
+//1.
+var cacti = ['barrel', 'columnar', 'hedgehog', 'cluster', 'prickly pear'];
+//2.
+console.log(cacti[2]);
+//3.
+cacti.length;
+//4.
+console.log(cacti[cacti.length-1]);
+//5.
+cacti.push('epiphytic');
+//6.
+cacti.indexOf('columnar');
+//7.
+cacti.unshift();
+//8.
+cacti.push('barrel');
+//9.
+var removed = cacti.splice(3,1);
+
+//Challenge 2
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
+for(var count = 0; count<fruits.length;count++){
+    console.log(fruits[count]);
+}
+//Challenge 3
+
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
+for(var count = fruits.length-1; count >=0; count--){
+    console.log(fruits[count]);
+}
+
+///Challenge 4
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
+for(var i = 0; i <= fruits.length;){
+    i+=2
+    console.log(fruits[i++]);
+}
+//Challenge B
