@@ -27,7 +27,7 @@ For some of the problems, you'll have to use functions or other variables suppli
 
 
 ### 1.  Build your own concatentation
-Display a new string that is the combination of two arguments passed into the function 
+Return a new string that is the combination of two arguments passed into the function 
 
 **Example: `dog` and `house` will display `doghouse`**
 
@@ -58,7 +58,7 @@ repeatPhrase("Hello", 5);
 ```
 
 ### 3.  Build your own Power function
-Display number <sup>power</sup> *without* using built-in `Math` functions
+Return number <sup>power</sup> *without* using built-in `Math` functions
 
 **Example**:   
 **4<sup>5</sup> = 4 * 4 * 4 * 4 * 4 = 1024**
@@ -73,7 +73,7 @@ toTheNthPower(4, 5);
 ```
 
 ### 4. Area of a circle:  &pi; r<sup>2</sup>
-Display the area of a circle given the radius  
+Return the area of a circle given the radius  
 [background information](http://www.mathgoodies.com/lessons/vol2/circle_area.html)
 
 ```javascript
@@ -87,7 +87,7 @@ areaOfACircle(2);
 
 
 ### 5.  Pythagorean Theorem: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
-Display c given a and b  
+Return c given a and b  
 [background information](https://en.wikipedia.org/wiki/Pythagorean_theorem)
 
 ```javascript
@@ -116,7 +116,7 @@ isXEvenlyDivisibleByY(99, 3);
 
 
 ### 7.  Vowel Count:
-Count the number of occurence of vowels in a word.
+Return the number of occurences of vowels in a word.
 Vowels are `a`, `e`, `i`, `o`, `u`, and `y`
 
 ```javascript
