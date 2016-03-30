@@ -64,7 +64,8 @@ function countVowels(word) {
 			count++;
 		}
 	}
-	console.log(count);
+	return count;
+
 }
 countVowels("stealing");
 
@@ -83,5 +84,5 @@ printTriangle(3);
 
 //9
 function printPyramid(length) {
-/* I have no idea, but I will look at the solution later to make sense of this */    
+/* I have no idea, but I will look at the solution later to make sense of this */
 }
