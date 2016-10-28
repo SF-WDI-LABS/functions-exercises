@@ -40,7 +40,7 @@ When you wrap up work, edit this README to include your name, a link to the orig
 
 > I was a able to complete all of the mathematical functions, but the string related functions were difficult for me. I spoke with the evening TA and she helped me solve the ASCII triangle function. I'm still feeling iffy on writing my own loops.
 
-Push your updates to GitHub and add a link to the repo to the "My Work" section of your website!
+Push your updates to GitHub and add a link to the repo to the "My Work" section of your website!  Name the link `HW #2 - Function-Exercises'
 
 ## Function Definitions!
 
