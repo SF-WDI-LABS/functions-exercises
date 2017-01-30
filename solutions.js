@@ -100,7 +100,7 @@ function findLongestWord(sentence) {
 			longestIndex = i;
 		}
 	}
-	return arr[i];
+	return arr[longestIndex];
 }
 // print a simple triangle with asterisks (ASCII Art!!!)
 // Example: printTriangle(5)
